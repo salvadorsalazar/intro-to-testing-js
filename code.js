@@ -3,10 +3,16 @@ function helloWorld() {
     return "Hello, World!";
 }
 
-functin sayHello(name){
-    if (name === undefined || name === true || name === false){
-        return "hello World!";
-    }else{
-        return
+
+
+function sayHello(name) {
+    if (typeof name === "string" ) {
+        return "Hello, " + name + "!";
+    } else {
+        return "Hello, World!";
     }
+}
+
+function isFive(){
+//return 5;
 }
