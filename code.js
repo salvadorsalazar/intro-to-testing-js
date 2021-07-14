@@ -13,6 +13,6 @@ function sayHello(name) {
     }
 }
 
-function isFive(){
-//return 5;
+function isFive(input){
+return input ===5;
 }

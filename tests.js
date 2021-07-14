@@ -46,8 +46,15 @@ describe('sayHello', function() {
 describe ('isFive',function(){
     it('should be a defined function',function(){
         expect(typeof isFive).toBe('function');
-    })
-
+    });
+    it('should be a boolean',function(){
+        expect(typeof isFive()).toBe('boolean');
+    });
+    //Ensure that isFive returns true when passed 5
+it('should return 5',function(){
+    expect(isFive(5)).toBe(true);
+});
+    //What about if we pass in the string "5"? Do you want isFive to return true for that?
 
 
 })
